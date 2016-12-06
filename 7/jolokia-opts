@@ -85,6 +85,7 @@ EOF
 
 if [ -z "${AB_JOLOKIA_OFF+x}" ]; then
   if [ -z "${AB_JOLOKIA_CONFIG}" ]; then
+    echo "Custom Jokolia config file"
     AB_JOLOKIA_CONFIG="/opt/jolokia/etc/jolokia.properties"
     write_jolokia_properties "$AB_JOLOKIA_CONFIG"
   fi
